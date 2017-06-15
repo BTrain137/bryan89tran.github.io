@@ -9,11 +9,19 @@ header {
 	border-bottom: 2px solid #E0D5D5;
 }
 
-a {
+.a1 {
 	color: #777777;
 }
 
 #hr1 {
+	border: none;
+	width: 90%;
+	height: 3px;
+	background-color: #DDD7D7;
+	margin-bottom: 15px;
+}
+
+#hr2 {
 	border: none;
 	width: 90%;
 	height: 3px;
@@ -46,7 +54,7 @@ p2 {
 
 #main {
 	background-image: url("../images/concrete_texture.png");
-	height: 530px;
+	display: inline-block;
 	padding-top: 50px;
 	padding-left: 32px;
 	padding-right: 30px;
@@ -114,3 +122,112 @@ footer {
 	border-top: 6px solid #4aaaa5;
 	height: 60px;
  }
+
+.contactpage {
+	font-size: 30px;
+	color: gray;
+	font-family: 'Helvetica Neue', 'Helvetica', 'sans-serif';
+	margin: 0px;
+	padding: 0px;
+}
+
+textarea {
+	font-size: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+ #textarea1 {
+ 	margin-left: 8px;
+ 	padding-left: 20px;
+ }
+
+ul {
+}
+
+ul, li {
+	list-style: none;
+	display: inline;
+}
+
+ #hangmanpic {
+ 	width: 240px;
+ 	height: 210px;
+ }
+
+ #hangman {
+ 	position: absolute;
+	top: 370px;
+	left: 210px;
+    background-color: #4aaaa5;
+    height: 20px;
+    color: white;
+	padding: 5px 60px 5px 60px;
+ }
+
+#rpgpic {
+ 	width: 200px;
+ 	height: 180px;
+ 	padding-left: 20px;
+ 	padding-bottom: 20px;
+}
+
+#rpgtext {
+ 	position: absolute;
+	top: 370px;
+	left: 447px;
+    background-color: #4aaaa5;
+    height: 20px;
+    color: white;
+	padding: 5px 62px 5px 65px;
+}
+
+#triviapic {
+	width: 190px;
+ 	height: 170px;
+ 	padding-left: 22px;
+}
+
+#triviatext {
+ 	position: absolute;
+	top: 570px;
+	left: 205px;
+    background-color: #4aaaa5;
+    height: 20px;
+    color: white;
+	padding: 5px 72px 5px 79px;
+}
+
+#rugterspic {
+ 	width: 203px;
+ 	height: 170px;
+ 	padding-left: 47px;
+ 	padding-top: 20px;
+}
+
+#rutgerstext {
+	position: absolute;
+	top: 570px;
+	left: 446px;
+    background-color: #4aaaa5;
+    height: 20px;
+    color: white;
+	padding: 5px 37px 5px 35px;
+}
+
+#rockpic {
+	width: 190px;
+ 	height: 170px;
+ 	padding-left: 22px;
+ 	padding-top: 30px;
+}
+
+#rocktext{
+	position: absolute;
+	top: 800px;
+	left: 205px;
+    background-color: #4aaaa5;
+    height: 20px;
+    color: white;
+	padding: 5px 32px 5px 27px;
+}
