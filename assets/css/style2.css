@@ -88,6 +88,7 @@ p {
 	font-family: 'Helvetica Neue', 'Helvetica', 'sans-serif';
 	line-height: 180%;
 	font-size: 14px;
+	float: right;
 }
 
 #connectlinks {
@@ -212,7 +213,7 @@ ul, li {
     background-color: #4aaaa5;
     height: 20px;
     color: white;
-	padding: 5px 37px 5px 35px;
+	padding: 5px 10px 5px 6px;
 }
 
 #rockpic {
@@ -224,10 +225,11 @@ ul, li {
 
 #rocktext{
 	position: absolute;
+	text-align: center;
 	top: 800px;
 	left: 205px;
     background-color: #4aaaa5;
     height: 20px;
     color: white;
-	padding: 5px 32px 5px 27px;
+	padding: 5px 0px 5px 3px;
 }
