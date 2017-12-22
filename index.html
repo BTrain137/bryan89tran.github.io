@@ -1,71 +1,308 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Basic Protfolio</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style2.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<header>
-	
-	<div>
-		<h>Bryan Tran</h>
-	</div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">     
+    <style>
+    body{
+        font-family: 'Arsenal', sans-serif;
+        background: url(./assets/background.jpg) no-repeat 0px 0px;
+        background-size: cover;
+        -webkit-background-size: cover; 
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-attachment: fixed;
+    }
+    .main h1{
+        text-align: center;
+        color: #fff;
+        font-size:3em;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight: 700;
+        margin-bottom: .8em;
+        padding-top: 50px;
+    }
+    .main_grids{
+	    width:70%;
+	    margin:0 auto;
+    }
+    .main_grid_top_grid{
+	    padding: 20px;
+	    background: #6c91a16b;
+    }
+    .main_grid_mid_grid{
+	    padding: 20px;
+        background: #f8faf9da;
+    }
+    .main_grid_mid_grid p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    .main_grid_top_grid h2{
+	    font-size:2em;
+	    color:#fff;
+	    text-align:center;
+    }
+    .displayIcons{
+        text-align: center;
+        margin: 10px;
+    }
+    .displayIcons img{
+        border: 3px solid #f32d2d;
+        border-radius: 50%;
+    }
+    .displayIcons i {
+        padding-top: 18px;
+        margin: 0 auto;
+    }
+    .displayIcons a{
+        margin: 20px;
+    }
+    .icons{
+        color: #24292e;
+        width: 106px;
+        height: 106px;
+        border: 2px solid #fff;
+        border-radius: 65px;
+        display: block;
+        background: #fff;
+    }
+    .icons:hover{
+        background: #24292e;
+    }
+    .displayIcons a{
+        margin-left: 30%;
+    }   
+    .main_grid_mid_grid h2{
+        font-size:2em;
+	    text-align:center;
+    }
+    .main_grid_mid_grid p{
+        text-align: center
+    }
+    .main_grid_app {
+        background: #6c91a16b;
+    }
+    .app_images_grid{
+        padding-left: 35px;
+    }
+    .main_grid_app h2 {
+        font-size:2em;
+	    color:#fff;
+	    text-align:center;
+    }
+    .main_grid_app img{
+        max-height: 300px;
+        width: 90%
+    }
+    .project {
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+    @media (max-width: 1000px){
+        .main_grid_top_grid h2 {
+            font-size: 1.7em;
+        }
+        .displayIcons {
+            margin: 25px;
+        }
+        .displayIcons a{
+            margin-left: 10%;
+        }   
+        .main_grid_app img{
+            min-height: 600px;
+            width: 600px
+        }
+        .app_images_grid{
+            padding-left: 60px;
+        }
+    }
+    @media (max-width: 955px){  
+        .main_grid_app img{
+            height: 100%;
+            width: 527px;
+        }
+        .app_images_grid{
+            padding-left: 20px;
+        }
+        .project {
+            padding-bottom: 7px;
+        }
+    }
+    @media (max-width: 768px){  
+        .main_grid_app img{
+            min-height: 400px;
+            width: 527px;
+        }
+        .app_images_grid{
+            padding-left: 20px;
+        }
+        .project {
+            padding-bottom: 7px;
+        }
+    }
+    @media (max-width: 765px){  
+        .main_grid_app img{
+            width: 480px;
+        }
+    }
+    @media (max-width: 700px){  
+        .main_grid_app img{
+            width: 400px;
+        }
+    }
+    @media (max-width: 570px){  
+        .main_grid_app img{
+            width: 380px;
+        }
+    }
 
-	<div id="links">
-		<a href="index.html">About</a>
-		<p2>|</p2>
-		<a href="portfolio.html">Protfolio</a>
-		<p2>|</p2>
-		<a href="contact.html">Contact</a>		
-	</div>
+    @media (max-width: 570px){  
+        .displayIcons {
+            padding-left: 20%;
+        }
+    }
+    @media (max-width: 470px){  
+        .main_grid_app img{
+            width: 320px;
+        }
+    }
+    @media (max-width: 460px){  
+        .main_grid_app img{
+            width: 300px;
+        }
+    }
+    @media (max-width: 435px){  
+        .main_grid_app img{
+            width: 280px;
+        }
+    }
+    @media (max-width: 414px) {
+        .main h1{
+            padding-left: 50px;
+            margin-left: 50px;
+        }
+        .main_grids{
+            width:120%;
+            padding-left: 30px;
+            margin:0 auto;
+        }
+        .main_grid_app img{
+            min-height: 330px;
+            width: 455px
+        }
+        .app_images_grid{
+            padding-left: 20px;
+        }
+        .project {
+            padding-bottom: 5px;
+        }
+    }
+    @media (max-width: 375px) {
+        .main_grids{
+            width:120%;
+            padding-left: 32px;
+            margin:0 auto;
+        }
+        .main_grid_app img{
+            min-height: 300px;
+            width: 410px
+        }
+        .app_images_grid{
+            padding-left: 20px;
+        }
+        .project {
+            padding-bottom: 5px;
+        }
+    }
+    @media (max-width: 360px){  
+        .main_grid_app img{
+         
+            width: 390px;
+        }
+    }
+    </style>
+  </head>
+  <body>
+      <div class="main">
+        <h1>bryan tran</h1>
+        <div class="main_grids">
 
-</header>
-<!--about me sections-->
+            <div class="row">	
+                <div class="col-md-12">
+                    <div class="main_grid_top_grid">	
+                        <h2>Full Stack Developer</h2>
 
-<div id="main">
-
-	<div id="bio">
-
-		<div id="About">About me</div>
-
-
-	<hr id="hr1">
-	
-	<div id="selfphoto">
-	<img src="assets/images/Me.png">
-	</div>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas porro consectetur cum excepturi dolore explicabo possimus at aperiam, quod fuga itaque dolorum. Esse dicta minus autem praesentium quisquam, enim rerum!</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas porro consectetur cum excepturi dolore explicabo possimus at aperiam, quod fuga itaque dolorum. Esse dicta minus autem praesentium quisquam, enim rerum!</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas porro consectetur cum excepturi dolore explicabo possimus at aperiam, quod fuga itaque dolorum. Esse dicta minus autem praesentium quisquam, enim rerum!</p>
-
-	</div>
-
-	<div id="connectlinks">
-	
-		<div id="connectwords">Connect with Me</div>
-
-	<hr id="hr2">
-	
-		<div id="icons">
-	<a href="https://github.com/bryan89tran"><img src="assets/images/Github.png" width="65"></a>
-	<a href="https://www.linkedin.com/in/bryan-tran-4919b772/"><img src="assets/images/Linkedin.png" width="60"></a>
-	<a href="https://stackoverflow.com/users/8087298/bryan89tran"><img src="assets/images/Stackoverflow.png" width="60"></a>
-
-		</div>
-		
-	</div>
-	
-
-</div>
-
-<footer>
-<br>
-	<h2>@copyright2017 Bryan Tran</h2>
-</footer>
-
-</body>
+                        <div class="displayIcons row">
+                            <div class="col">
+                                <a href="#" class="icons"><img src="./assets/bryan.JPG" alt=" "></a> 
+                            </div>
+                            <div class="col">
+                                <a href="https://github.com/bryan89tran" class="icons"><i class="fa fa-github fa-4x"></i></a>                            
+                            </div>
+                            <div class="col">
+                                <a href="https://www.linkedin.com/in/bryan-nh-tran/" class="icons"><i class="fa fa-linkedin fa-4x"></i></a>                            
+                            </div>
+                            <div class="col">
+                                <a href="./assets/Resume.pdf" class="icons"><i class="fa fa-download fa-4x"></i></a>                                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="main_grid_mid_grid">
+                        <h2>About Me</h2>
+                        <p> Hello! I am a technology enthusiast with skills in front-end and back-end programming. The learning never stop and this is one of the reaason why I love working in big groups. Garthering techniques and stragys from codes and coders alike. These sites are powered by JavaScript, jQuery, Node.js, Express, MySQL, Sequelize, MongoDB, Bootstrap and React</p>
+                            
+                        <p>A developer developing developments develop. </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="main_grid_app">
+                        <h2>Applications Built</h2>
+                        <div class="app_images_grid row">
+                            <div class="project col">
+                                <img src="./assets/makeUp.png" alt="">                                 
+                            </div>
+                            <div class="project col">
+                                <img src="./assets/bobatime.png" alt="">                                
+                            </div>
+                        </div>    
+                        <div class="app_images_grid row">
+                            <div class="project col">
+                                <img src="./assets/justInStock.png" alt="">                                 
+                            </div>
+                            <div class="project col">
+                                <img src="./assets/getMixing.png" alt="">                                
+                            </div>                       
+                          
+                        </div>
+                        <div class="app_images_grid row">
+                            <div class="project col">
+                                <img src="./assets/burger.png" alt="">                                
+                            </div>
+                            <div class="project col">
+                                <img src="./assets/friend.png" alt="">                                
+                            </div>                       
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+      </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 </html>
